@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <title>india</title>
+    <link rel="stylesheet" href="gallery.css" />
+</head>
+
+<body>
+    <h2>
+        India, a diverse and captivating country, offers a rich travel experience. From the iconic Taj Mahal to the bustling streets of Delhi, India
+        is a land of history, culture, and natural beauty. Explore majestic palaces, serene backwaters, and vibrant festivals. Indulge in flavorful
+        cuisine and experience the warmth of Indian hospitality. India is a treasure trove of unforgettable adventures waiting to be discovered.
+    </h2>
+    <div class="full-img" id="fullimgbox">
+        <img src="india/1.jpg" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <img src="india/1.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/2.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/5.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/4.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/6.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/7.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/8.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/9.jpg" alt="india" onclick="openfullimg(this.src)">
+
+
+        </div>
+
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+        function openfullimg(pic) {
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+
+        }
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <title>indonesi</title>
+    <link rel="stylesheet" href="gallery.css" />
+</head>
+
+<body>
+    <h2>
+        Explore active volcanoes, dive into rich marine life, and savor Indonesian cuisine's flavors. Indonesia promises an
+        immersive journey into a world of natural beauty and cultural richness.
+    </h2>
+    <div class="full-img" id="fullimgbox">
+        <img src="indo/1.jpg" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <img src="indo/1.jpg" onclick="openfullimg(this.src)">
+            <img src="indo/2.jpg" onclick="openfullimg(this.src)">
+            <img src="indo/5.jpg" onclick="openfullimg(this.src)">
+            <img src="indo/4.jpg" onclick="openfullimg(this.src)">
+            <img src="indo/6.jpg" onclick="openfullimg(this.src)">
+            <img src="indo/7.jpg" onclick="openfullimg(this.src)">
+            <img src="indo/8.jpg" onclick="openfullimg(this.src)">
+            <img src="indo/9.jpg" onclick="openfullimg(this.src)">
+
+
+        </div>
+
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+        function openfullimg(pic) {
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+
+        }
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>

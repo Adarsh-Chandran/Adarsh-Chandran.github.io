@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>review</title>
+    <meta charset="utf-8">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100vh;
+        background-image: url("wp1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .logo {
+        width: 120px;
+        cursor: pointer;
+
+    }
+
+    body {
+        font-family: Verdana, Arial, sans-serif;
+    }
+
+    nav {
+        background-color: #B3C7E6;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        border-bottom: 1px solid #ffffff;
+    }
+
+    nav a {
+        text-decoration: none;
+        display: block;
+        padding: 1em 2em;
+    }
+
+    nav a:link {
+        color: #FFFFFF;
+    }
+
+    nav a:visited {
+        color: #F8F8F8;
+    }
+
+
+    nav a:hover {
+        color: #000066;
+        background-color: #eaeaea;
+    }
+
+    h2 {
+        color: rgb(30, 14, 73);
+        font-family: arial, sans-serif;
+    }
+
+    h1 {
+        color: rgb(30, 14, 73);
+        font-family: arial, sans-serif;
+        text-align: center;
+    }
+
+    h6 {
+        color: rgb(30, 14, 73);
+        font-family: arial, sans-serif;
+        text-align: center;
+    }
+
+    h4 {
+        font-family: arial, sans-serif;
+        text-align: center;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    @media only screen and (min-width: 768px) {
+        #content {
+            display: flex;
+            float: right;
+        }
+
+        nav {
+            flex: none;
+        }
+
+        main {
+            flex: 6;
+            min-width: 20em;
+            background-color: #FFFFFF;
+        }
+
+        aside {
+            flex: 4;
+            background-color: #EAEAEA;
+        }
+
+        .coment {
+            font-family: arial, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            padding-left: 10em;
+        }
+</style>
+</head>
+
+<body>
+    <div class="banner">
+        <div id="content">
+            <nav>
+                <ul>
+                    <img src="logo.png.png" class="logo" alt="logo" />
+                    <ul>
+                        <li><a href="home.html  ">Home</a></li>
+                        <li><a href="explore.html">Explore</a>
+                        </li>
+                        <li><a href="flight.html">flights</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+        <h1><br><br><br>Explore The World With Me</h1>
+        <h1>
+            <br>
+            <br>
+            <br>Thank you
+        </h1>
+        <div class="coment">
+
+            <script>
+                var userName;
+                userName = prompt("Please enter your name");
+                rivew = prompt("Please enter your comments");
+                document.write("<h2><br><br>Hello " + userName + "<br>Thanks for taking the time to review this page. I appreciate your valuable input. </h2>");
+
+                document.write("<h2><br><br>Comments: " + rivew + "<br></h2>");
+            </script>
+            </divclass>
+</body>
+
+</html>

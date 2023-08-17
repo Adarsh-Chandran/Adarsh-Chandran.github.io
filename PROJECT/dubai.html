@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <title>dubai</title>
+    <link rel="stylesheet" href="gallery.css" />
+</head>
+
+<body>
+    <h2>
+        Dubai: A bustling city known for its iconic skyscrapers, such as the Burj Khalifa. Experience the luxurious lifestyle, indulge in shopping at
+        world-class malls, and embark on thrilling desert safaris. Immerse yourself in the vibrant culture and enjoy the diverse culinary scene. Dubai
+        offers a perfect blend of modernity and tradition, making it a truly unforgettable destination
+    </h2>
+    <div class="full-img" id="fullimgbox">
+        <img src="dubai/1.jpg" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <img src="dubai/1.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="dubai/2.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="dubai/5.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="dubai/4.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="dubai/6.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="dubai/7.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="dubai/8.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="dubai/9.jpg" alt="india" onclick="openfullimg(this.src)">
+
+
+        </div>
+
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+        function openfullimg(pic) {
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+
+        }
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>

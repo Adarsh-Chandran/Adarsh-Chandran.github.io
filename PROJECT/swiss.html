@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <title>swisserland</title>
+    <link rel="stylesheet" href="gallery.css" />
+</head>
+
+<body>
+    <h2>
+        Nestled in the heart of Europe, Switzerland is a land of breathtaking landscapes, from the snow-capped peaks of the Alps to the serene beauty
+        of its lakes. Explore charming cities like Zurich, Geneva, and Lucerne, and indulge in Swiss delicacies like fondue and Swiss chocolate.
+        Whether you're skiing in the winter or hiking in the summer, Switzerland offers an unforgettable experience for nature lovers and adventure
+        seekers alike
+    </h2>
+    <div class="full-img" id="fullimgbox">
+        <img src="swiss/1.jpg" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <img src="swiss/1.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="swiss/2.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="swiss/5.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="swiss/4.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="swiss/6.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="swiss/7.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="swiss/8.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="swiss/9.jpg" alt="india" onclick="openfullimg(this.src)">
+
+
+        </div>
+
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+        function openfullimg(pic) {
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+
+        }
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>

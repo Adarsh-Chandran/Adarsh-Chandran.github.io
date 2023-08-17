@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <title>india</title>
+    <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+    <div class="full-img" id="fullimgbox">
+        <img src="india/1.jpg" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <img src="india/1.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/2.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/5.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/4.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/6.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/7.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/8.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="india/9.jpg" alt="india" onclick="openfullimg(this.src)">
+            
+
+        </div>
+
+    </div>
+<script>
+    var fullimgbox = document.getElementById("fullimgbox");
+    var fullimg = document.getElementById("fullimg");
+    function openfullimg(pic)
+    {
+        fullimgbox.style.display = "flex";
+        fullimg.src = pic;
+
+    }
+    function closefullimg(){
+        fullimgbox.style.display = "none";
+    }
+
+</script>
+</body>
+</html>

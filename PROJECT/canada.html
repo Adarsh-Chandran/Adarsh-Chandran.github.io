@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <title>Canada</title>
+    <link rel="stylesheet" href="gallery.css" />
+</head>
+
+<body>
+    <h2>
+        A beautiful country with diverse landscapes, from the rugged Rocky Mountains to the pristine lakes of Banff National Park. Explore vibrant
+        cities like Toronto and Vancouver, and experience Canadian hospitality and multiculturalism. Don't forget to try poutine, a delicious Canadian
+        specialty!
+    </h2>
+    <div class="full-img" id="fullimgbox">
+        <img src="canada/1.jpg" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <img src="canada/1.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="canada/2.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="canada/3.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="canada/4.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="canada/6.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="canada/7.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="canada/8.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="canada/9.jpg" alt="india" onclick="openfullimg(this.src)">
+            <img src="canada/5.jpg" alt="india" onclick="openfullimg(this.src)">
+
+        </div>
+
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+        function openfullimg(pic) {
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+
+        }
+        function closefullimg() {
+            fullimgbox.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
